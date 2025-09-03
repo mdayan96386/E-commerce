@@ -7,10 +7,7 @@ const cors = require('cors')
 
 const app = express()
 const PORT = process.env.PORT || 5000;
-app.use(cors({
-    origin:'https://e-commerce-frontend-hazel-nine.vercel.app',
-    credentials:true
-}))
+app.use(cors())
 
 // Connect Data Base
 connectDB()
